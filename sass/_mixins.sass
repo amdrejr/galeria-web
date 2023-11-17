@@ -1,0 +1,35 @@
+@use 'variables'
+
+@mixin container
+    max-width: variables.$container-width
+    padding: 1.5rem 0
+    margin: 0 auto
+
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin text-shadow
+    text-shadow: .08em .08em 0px red, .16em .16em 0px #ff000085, .24em .24em 0px #ff000038
+
+@mixin bg-img($img) 
+    background-image: url('../img/#{$img}')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    filter: grayscale(100%)
+    transition: filter .6s linear
+
+    &:hover
+        filter: grayscale(0%)
+
+@mixin width1000
+    @media screen and (max-width: 1000px)
+        @content
+
+@mixin mobile600
+    @media screen and (max-width: 600px)
+        @content
+
+    

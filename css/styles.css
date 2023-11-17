@@ -1,0 +1,240 @@
+* {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.header-brand {
+  color: #fff;
+  font-size: 3.5rem;
+  font-style: italic;
+  letter-spacing: 0.8rem;
+  text-shadow: 0.08em 0.08em 0px red, 0.16em 0.16em 0px rgba(255, 0, 0, 0.5215686275), 0.24em 0.24em 0px rgba(255, 0, 0, 0.2196078431);
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-navbar li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.header-navbar li .active {
+  color: #F00;
+}
+.header-navbar li a:hover {
+  color: #fff;
+  text-shadow: 0.08em 0.08em 0px red, 0.16em 0.16em 0px rgba(255, 0, 0, 0.5215686275), 0.24em 0.24em 0px rgba(255, 0, 0, 0.2196078431);
+}
+@media screen and (max-width: 600px) {
+  .header-navbar {
+    display: none;
+  }
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.gallery-card {
+  min-width: 270px;
+  width: 31%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: 0.05em 0.05em 0px black;
+}
+@media screen and (max-width: 600px) {
+  .gallery-card {
+    width: 100%;
+  }
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.3490196078);
+}
+.gallery-card-btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: none;
+  text-shadow: none;
+}
+@media screen and (max-width: 600px) {
+  .gallery {
+    padding: 0;
+    gap: 5px;
+  }
+}
+.gallery #card-1 {
+  background-image: url("../img/animals.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-1:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-2 {
+  background-image: url("../img/cities.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-2:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-3 {
+  background-image: url("../img/people.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-3:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-4 {
+  background-image: url("../img/foods.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-4:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-5 {
+  background-image: url("../img/nature.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-5:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-6 {
+  background-image: url("../img/moon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-6:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-7 {
+  background-image: url("../img/mosaic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-7:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-8 {
+  background-image: url("../img/antique.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-8:hover {
+  filter: grayscale(0%);
+}
+.gallery #card-9 {
+  background-image: url("../img/random.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.6s linear;
+}
+.gallery #card-9:hover {
+  filter: grayscale(0%);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+footer span {
+  font-weight: 700;
+  color: #F00;
+}
+
+/*# sourceMappingURL=styles.css.map */
